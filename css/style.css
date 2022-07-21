@@ -1,3 +1,4 @@
+@import "node_modules/normalize.css/normalize.css";
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -15,7 +16,13 @@ a {
     text-decoration: none;
     color: black;
 }
-
+/* Helpers */
+.blue {
+    color: #0065FC;
+}
+.grey {
+    color: #dddbdb;
+}
 
 /* Header */
 header {
@@ -24,26 +31,27 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 40px 0 60px;
-    height: 102px;
+    height: 100px;
 }
 header img {
     width: 110px;
 }
 header nav {
     display: flex;
-    height: 100%;
+    align-items: baseline;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
 }
 header nav a {
     color: black;
     text-decoration: none;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 37px 40px;
 }
 header nav a:hover {
     color: #0065FC;
-    border-top: #0065FC 3px solid;
+    border-top: #0065FC 4px solid;
 }
 @media all and (max-width: 768px)
 {
@@ -58,14 +66,25 @@ header nav a:hover {
     header nav {
         width: 100%;
     }
+    header nav ul {
+        width: 100%;
+    }
+    header nav li {
+        width: 100%;
+    }
+    header nav li:first-child {
+        margin-left: -40px;
+    }
     header nav a {
+        display: flex;
+        justify-content: center;
         padding: 15px 0;
         width: 100%;
-        border-bottom: 3px solid #F2F2F2;
+        border-bottom: 4px solid #F2F2F2;
     }
     header nav a:hover {
         border-top: inherit;
-        border-bottom: #0065FC 3px solid;
+        border-bottom: #0065FC 4px solid;
     }
 }
 
@@ -251,41 +270,40 @@ form {
 .accommodation__marseille__articles a {
     background: white;
     border-radius: 20px;
-    width: 31%;
-    height: 220px;
+    width: 32%;
+    height: 230px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px #dddbdb;
 }
 .accommodation__marseille__articles img {
     padding: 5px;
-    height: 130px;
+    height: 140px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .accommodation__card {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .accommodation__card__marseille {
-    padding: 5px 5px 10px 14px;
+    padding: 0 5px 10px 10px;
+    height: 90px;
 }
 .accommodation__card__popular {
-    padding: 14px;
+    padding: 5px 5px 10px 0;
+    height: 100%;
 }
 .accommodation__card__title p {
-    padding-top: 8px;
+    margin-top: 5px;
 }
-.ratings .fa-star {
-    color: #0065FC;
-    zoom: 90%;
+.ratings .fa-star {  
+    zoom: 80%;
 }
-.first__rating i:nth-child(5), .third__rating i:nth-child(5), .fourth__rating i:nth-child(4), .fourth__rating i:nth-child(5), .fifth__rating i:nth-child(5) {
-    color: #dddbdb;
-}
+
 .accommodation__more{
     width: fit-content;
     color: black;
