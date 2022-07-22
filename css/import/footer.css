@@ -1,0 +1,30 @@
+/* Footer */
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    width: 100%;
+    padding: 40px 0;
+}
+footer div {
+    width: 30%;
+}
+footer h4 {
+    padding: 0 0 10px 40px;
+    font-size: large;
+}
+footer div li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+@media all and (max-width: 768px)
+{
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 460px;
+    }
+    footer div {
+        width: 100%;
+    }
+}
