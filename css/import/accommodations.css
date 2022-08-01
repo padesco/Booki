@@ -51,12 +51,13 @@
 .accommodation__card__popular {
     padding: 5px 5px 10px 0;
     height: 100%;
+    width: 60%;
 }
 .accommodation__card__title p {
     margin-top: 5px;
 }
 .ratings .fa-star {  
-    zoom: 80%;
+    font-size: medium;
 }
 
 .accommodation__more{
@@ -79,8 +80,8 @@
     align-items: center;
     padding-bottom: 20px;
 }
-.fa-star {
-    zoom: 150%;
+.accommodation__popular__title .fa-star {
+    font-size: x-large;
 }
 .accommodation__popular__articles {
     display: flex;
@@ -92,6 +93,7 @@
     display: flex;
     background: white;
     border-radius: 20px;
+    width: 100%;
     height: 160px;
     box-shadow: 0px 0px 10px #abaaaa;
 }
@@ -99,6 +101,7 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 40%;
+    height: 100%;
     object-fit: cover;
     padding: 5px;
 }
